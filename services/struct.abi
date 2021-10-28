@@ -1,0 +1,109 @@
+[
+    {
+        "constant": false,
+        "inputs": [
+            {
+                "name": "SM3Key",
+                "type": "bytes32"
+            },
+            {
+                "name": "evidenceHash",
+                "type": "bytes32"
+            },
+            {
+                "name": "storeTime",
+                "type": "bytes32"
+            }
+        ],
+        "name": "store",
+        "outputs": [],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "constant": true,
+        "inputs": [
+            {
+                "name": "SM3Key",
+                "type": "bytes32"
+            }
+        ],
+        "name": "verify",
+        "outputs": [
+            {
+                "name": "",
+                "type": "bool"
+            }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "constant": true,
+        "inputs": [
+            {
+                "name": "SM3Key",
+                "type": "bytes32"
+            }
+        ],
+        "name": "query",
+        "outputs": [
+            {
+                "name": "evidneceHash",
+                "type": "bytes32"
+            },
+            {
+                "name": "storeTime",
+                "type": "bytes32"
+            },
+            {
+                "name": "owner",
+                "type": "address"
+            }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "constant": true,
+        "inputs": [
+            {
+                "name": "",
+                "type": "bytes32"
+            }
+        ],
+        "name": "evidences",
+        "outputs": [
+            {
+                "name": "evidenceHash",
+                "type": "bytes32"
+            },
+            {
+                "name": "storeTime",
+                "type": "bytes32"
+            },
+            {
+                "name": "owner",
+                "type": "address"
+            }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "name": "SM3Key",
+                "type": "bytes32"
+            }
+        ],
+        "name": "EvidenceStoreLog",
+        "type": "event"
+    }
+]

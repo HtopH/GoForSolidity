@@ -1,0 +1,1 @@
+abigen --abi sampleAuction.abi --pkg services --type SampleAuction --out sampleAuction.go
