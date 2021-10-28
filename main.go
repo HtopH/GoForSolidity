@@ -32,7 +32,7 @@ var (
 	err          error
 	timeFormat   = "2006-01-02 15:04:05"
 	thisQuery    ethereum.FilterQuery
-	ctx          context.Context
+	ctx          context.Context //123123123
 )
 
 func init() {
